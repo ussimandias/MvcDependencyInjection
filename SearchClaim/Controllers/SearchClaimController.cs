@@ -7,6 +7,8 @@ using System.Web.Mvc;
 
 namespace SearchClaim.Controllers
 {
+
+
     public class SearchClaimController : Controller
     {
         // GET: SearchClaim
@@ -21,18 +23,7 @@ namespace SearchClaim.Controllers
 
             return View(booksCollection);
         }
-
-        [HttpGet]
-        public ActionResult Search()
-        {
-            return View();
-        }
-
-        [HttpPost]
-        public ActionResult Search(string searchbtn)
-        {
-            return PartialView( );
-        }
+      
 
         [HttpGet]
         public ActionResult AddBook()
@@ -61,8 +52,7 @@ namespace SearchClaim.Controllers
             else
             {
                 return View();
-            }
-                     
-        }
+            }                   
+        }        
     }
 }

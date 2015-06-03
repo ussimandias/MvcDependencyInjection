@@ -19,6 +19,7 @@ namespace SearchClaim.Models
         public interface ISearchResultsService
         {
             List<PersonClaim> FindClaims(string firstName, string lastName, string ClaimNumber, string CertificateNumber, string CompanyName, DateTimeOffset EffectiveDate, int Account, string Creditor, int LoanNumber);
+            
         }
 
         public class MockSearchResultsService : ISearchResultsService
@@ -34,12 +35,7 @@ namespace SearchClaim.Models
                     Account= 232, 
                     Creditor="Wells Fargo", 
                     LoanNumber = 123456 } });//throw new NotImplementedException();
-            }
-        }
-
-
-        
+            }          
+        }       
     }
-
-    
 }

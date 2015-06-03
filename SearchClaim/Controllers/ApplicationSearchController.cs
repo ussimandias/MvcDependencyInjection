@@ -30,16 +30,12 @@ namespace SearchClaim.Controllers
         public ActionResult Index()
         {
             
-
-            
             return View(_resultsService.FindClaims("", "", "", "", "", DateTimeOffset.Now, 123, "", 1234));
            
         }
 
         public ActionResult Search()
         {
-
-
 
             return View();
 

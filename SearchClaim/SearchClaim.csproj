@@ -160,6 +160,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\ApplicationSearchController.cs" />
+    <Compile Include="Controllers\FooController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\SearchClaimController.cs" />
     <Compile Include="Global.asax.cs">
@@ -229,6 +230,8 @@
     <Content Include="Views\ApplicationSearch\Search.cshtml" />
     <Content Include="Views\SearchClaim\Index.cshtml" />
     <Content Include="Views\SearchClaim\AddBook.cshtml" />
+    <Content Include="Views\Foo\Index.cshtml" />
+    <Content Include="Views\Foo\LatestReview.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

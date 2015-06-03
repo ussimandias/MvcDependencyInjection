@@ -1,9 +1,23 @@
 ﻿@model IEnumerable<SearchClaim.Models.PersonClaim>
 
+@{
+    ViewBag.Title = "Index";
+}
+
+@Ajax.ActionLink("Clich Here...",
+        "LatestReview", new AjaxOptions
+    {
+        UpdateTargetId = "latestReview",
+        InsertionMode = InsertionMode.InsertAfter,
+        HttpMethod = "GET"
+    });
+
+<h2>Index</h2>
+
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<table class="table table-bordered table-striped table-condensed" >
+<table class="table">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.FirstName)
